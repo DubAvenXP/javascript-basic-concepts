@@ -1,4 +1,4 @@
-// ========= Destructuring ========= 
+// ========= Destructuring =========
 
 // Arrays destructuring
 let fruits = ["apple", "banana", "orange", "strawberry", "kiwi", "mango"];
@@ -11,6 +11,8 @@ const person = {
     isStudent: false,
 };
 
+const genre = "Male";
+
 const product = {
     name: "TV",
     price: 1000,
@@ -22,42 +24,41 @@ const product = {
         building: {
             name: "Building 1",
             floor: 3,
-        }
+        },
     },
-    
-}
-
+};
 
 // Rest operator in functions
 const printInfo = (firstName, lastName, ...restOfInfo) => {
     console.log(restOfInfo);
 };
 
+printInfo("Erick", "Wendel", 27, "GT", false);
 
 // Copy a simple object with spread operator
 const copiedPerson = { ...person };
 console.log(copiedPerson);
 
+// create a new object with spread operator
+const data = {
+    ...person,
+    genre,
+}
 
 // copy an array
-let copyOfFruits = [...fruits];
+const copyOfFruits = [...fruits];
 console.log(copyOfFruits);
-
 
 // Spread operator
 const batmanAbilities = ["money", "intelligence", "fighting skills"];
 const supermanAbilities = ["super strength", "flight", "x-ray vision"];
 
-
-const abilities = [ ...batmanAbilities, ...supermanAbilities ];
+const abilities = [...batmanAbilities, ...supermanAbilities];
 console.log(abilities);
 
-
-const myAbilities = [ ...batmanAbilities, "super speed" ];
+const myAbilities = [...batmanAbilities, "super speed"];
 console.log(myAbilities);
 
-
-
-// ❌ Mal
-// function hola (primero, ...rest, ultimo) {}
-// SyntaxError: Rest element must be last element. 
+// ❌ Bad
+// function hola (first, ...rest, last) {}
+// SyntaxError: Rest element must be last element.
