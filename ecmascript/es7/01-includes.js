@@ -10,6 +10,7 @@ const numbers = [1, 2, 3, 4, 5]
 
 console.log(numbers.includes(3))
 
+// forms to verify if the property exists in the object
 "a" in words // true
 words.hasOwnProperty("a") // true
 Object.hasOwn(words, "a") // true
