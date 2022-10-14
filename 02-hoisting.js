@@ -2,7 +2,7 @@
 // hoisting
 // var nameOfDog;
 // console.log(nameOfDog);
-// var nameOfDog = 'Bobby';
+// nameOfDog = 'Bobby';
 // console.log(nameOfDog);
 
 myFunction();
