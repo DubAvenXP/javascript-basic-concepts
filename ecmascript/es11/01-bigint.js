@@ -1,0 +1,7 @@
+const bigNumber1 = 1234567890123456789012345678901234567890n;
+const bigNumber2 = BigInt("1234567890123456789012345678901234567890");
+const bigNumber3 = BigInt(1234567890123456789012345678901234567890);
+
+console.log(bigNumber1);
+console.log(bigNumber2);
+console.log(bigNumber3);
