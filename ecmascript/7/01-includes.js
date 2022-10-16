@@ -6,6 +6,7 @@
 
 const words = { a: 1, b: 2, c: 3 }
 const numbers = [1, 2, 3, 4, 5]
+const word = 'Hello'
 
 
 console.log(numbers.includes(3))
@@ -14,3 +15,5 @@ console.log(numbers.includes(3))
 "a" in words // true
 words.hasOwnProperty("a") // true
 Object.hasOwn(words, "a") // true
+
+word.includes("e") // true

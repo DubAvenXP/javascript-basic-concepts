@@ -7,6 +7,7 @@ try {
 try {
     otherFn();
 } catch {
+    // optional catch binding
     console.log("error 2");
 } finally {
     console.log("finally");

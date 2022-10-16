@@ -6,6 +6,8 @@
 // console.log(nameOfDog);
 
 myFunction();
+console.log(nameOfDog);
+
 
 function myFunction() {
     console.log(`My dog's name is ${nameOfDog}`);
