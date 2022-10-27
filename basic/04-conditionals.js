@@ -5,7 +5,9 @@
 // const myBoolean = true;
 // const myNumber = 0;
 const firstName = "David";
+const myBoolean = Boolean(0);
 
+console.log(myBoolean);
 
 // Basic If/Else Statements
 if (myBoolean) {
@@ -73,6 +75,11 @@ console.log(dog);
 
 const cat = "" || "Garfield";
 console.log(cat);
+
+const bird = "Tweety" && "Sylvester"; // Only returns the last value
+console.log(bird);
+const bird2 = false && "Sylvester"; // Only returns the last value
+console.log(bird2);
 
 
 // Example with objects
