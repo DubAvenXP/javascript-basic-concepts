@@ -22,6 +22,13 @@ console.log(typeof car);
 let test;
 console.log(typeof test);
 
+// BigInt
+const bigInt = 1234567890123456789012345678901234567890n;
+
+// Symbol
+const sym = Symbol();
+console.log(typeof sym);
+
 
 // Objects and Arrays
 const hobbies = ['movies', 'music'];
