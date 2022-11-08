@@ -1,3 +1,11 @@
+// A JavaScript function is a block of code designed to perform a particular task.
+
+// A JavaScript function is executed when "something" invokes it (calls it).
+
+
+
+
+
 // Note 1: Variables can save any type of data like 
 // strings, numbers, arrays, objects, functions, etc.
 
@@ -34,10 +42,14 @@ const multiplyWith2 = (number) => {
     return number * 2;
 }
 
-
 // Arrow function with implicit return
 const multiplyWith3 = (number) => number * 3;
 
 
 // Arrow functions with one parameter
 const multiplyWith4 = number => number * 4;
+
+
+// Arrow function that returns an object
+const multiplyWith5 = number => ({ result: number * 5 });
+

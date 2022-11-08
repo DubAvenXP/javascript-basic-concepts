@@ -16,6 +16,8 @@ const person = {
     }
 }
 
+console.log(person);
+
 delete person.name;
 console.log(person);
 
@@ -24,8 +26,9 @@ console.log(person);
 
 // delete with index
 // Since arrays are just objects, it's technically possible to delete elements from them. 
-delete person.hobbies[1];
-console.log(person);
+// However, it's not recommended to do so, because it will leave undefined holes in the array.
+// delete person.hobbies[1];
+// console.log(person);
 
 // typeof operator
 
@@ -39,9 +42,9 @@ const size = 1;
 const foo = ['Apple', 'Mango', 'Orange'];
 const today = new Date();
 
-typeof myFun;       // returns "function"
-typeof shape;       // returns "string"
-typeof size;        // returns "number"
-typeof foo;         // returns "object"
-typeof today;       // returns "object"
-typeof doesntExist; // returns "undefined"
+console.log(typeof myFun);      
+console.log(typeof shape);      
+console.log(typeof size);       
+console.log(typeof foo);        
+console.log(typeof today);      
+console.log(typeof doesntExist);

@@ -31,10 +31,16 @@ const numberCounter = numbers.reduce((obj, item) => {
     return obj;
 }, {});
 
+
+
+
 const deliveredCounter = orders.reduce((counter, order) => {
     order.delivered ? counter.delivered++ : counter.undelivered++;
     return counter;
 }, { delivered: 0, undelivered: 0 });
+
+
+
 
 const studentsByLevel = students.reduce((response, student) => {
     if (!response[student.level]) {

@@ -6,7 +6,7 @@ else console.log("Hello Stranger");
 
 
 function doSomething(myVar) {
-    if (!myVar) return;
+    if (!myVar) return 'myVar is not defined';
 
     // Do something
     console.log(myVar);

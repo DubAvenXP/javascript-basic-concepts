@@ -1,6 +1,20 @@
 // Array is a special type of object
 // that can store multiple values in a single variable
 
+// const numbers = [1, 2, 3, 4, 5];
+
+// array maybe look like this but is more complex
+
+// const numbers = {
+//   0: 1,
+//   1: 2,
+//   2: 3,
+//   3: 4,
+//   4: 5,
+//   length: 5
+// };
+
+
 
 // Exists static and dynamic arrays 
 
@@ -40,6 +54,10 @@ console.log(array2);
 const array3 = Array.of(1, 2, 3, 4, 5);
 console.log(array3);
 
+// 3.1 Using the Array.of method with a single parameter
+const array31 = Array.of(1);
+
+
 // 4. Using the Array.from method
 const array4 = Array.from(array3);
 console.log(array4);
@@ -47,3 +65,14 @@ console.log(array4);
 // 5. Using the Array.from method with a map function
 const array5 = Array.from(array3, x => x * 2);
 console.log(array5);
+
+// 6. Using the Array.from method with object
+const myFiles = {
+    0: 'file1',
+    1: 'file2',
+    2: 'file3',
+    length: 3
+}
+
+const array6 = Array.from(myFiles);
+console.log(array6);

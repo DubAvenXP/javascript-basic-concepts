@@ -1,13 +1,16 @@
+
+// object literal
+
 const natalia = {
     name: 'Natalia',
     age: 25,
-    cursosAprobados: [
-        'HTML',
-        'CSS',
-        'JS',
+    approvedCourses: [
+        "Mathematics",
+        "English",
+        "Geography",
     ],
-    aprobarCurso(curso) {
-        this.cursosAprobados.push(curso);
+    approveCourse(course) {
+        this.cursosAprobados.push(course);
     }
 }
 

@@ -3,6 +3,8 @@
 // Equal
 // Returns true if the operands are equal.	
 
+// Note: Equal does not compare the type of the operands.
+
 console.log(1 == 1); // true
 console.log(1 == "1"); // true
 console.log(null == undefined); // true

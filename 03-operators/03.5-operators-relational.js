@@ -14,8 +14,12 @@ const trees = ['redwood', 'bay', 'cedar', 'oak', 'maple'];
 0 in trees;        // returns true
 3 in trees;        // returns true
 6 in trees;        // returns false
-'bay' in trees;    // returns false (you must specify the index number,
-                   // not the value at that index)
+
+// returns false (you must specify the index number,
+// not the value at that index)
+'bay' in trees; 
+console.log('bay' in trees);
+
 'length' in trees; // returns true (length is an Array property)
 
 // built-in objects

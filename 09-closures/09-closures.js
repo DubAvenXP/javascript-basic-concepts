@@ -10,6 +10,10 @@
 // moneyBox(5);
 
 
+// Closures are functions that refer to independent (free) variables.
+// In other words, the function defined in the closure ‘remembers’ 
+// the environment in which it was created.
+
 function moneyBox() {
     let saveCoins = 0;
     return function(coins) {
