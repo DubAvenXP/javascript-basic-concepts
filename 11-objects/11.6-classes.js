@@ -6,14 +6,37 @@
 
 class Student {
 
+    #name;
+    #age;
+
     constructor({name, age, approvedCourses = []}) {
-        this.name = name;
-        this.age = age;
-        this.approvedCourses = approvedCourses;
+        // private properties using the new syntax #
+        this.#name = name;
+        this.#age = age;
+        
     }
 
     approveCourse(course) {
         this.approvedCourses.push(course);
+    }
+
+    // static methods are methods that are not available in the instances
+    // they are only available in the class
+    static sayHello() {
+        console.log('Hello');
+    }
+
+    // getters and setters are methods that are used to get and set the value of a property
+    get name() {
+        return this.#name;
+    }
+
+    set name(newName) {
+        if (typeof newName !== 'string') {
+            console.error('Name must be a string');
+            return;
+        }
+        this.#name = newName;
     }
 }
 

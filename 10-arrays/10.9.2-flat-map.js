@@ -1,17 +1,16 @@
+// FlatMap (flatMap)
+
+// Is flat is used to flatten an array of arrays into a single array
+// Is map is used to transform the elements of an array
+
+// Is flatMap is used to flatten an array of arrays into a single array 
+// and then transform the elements of the array
+
 const users = [
     { name: 'John', age: 20, attributes: ["Nice", "Cute", "Cool", "Lovely"] },
     { name: 'Sarah', age: 35, attributes: ["Cool", "Lovely"] },
     { name: 'Nick', age: 25, attributes: ["Lovely"] },
     { name: 'Tom', age: 30, attributes: ["Cute"] },
-];
-
-const students = [
-    { name: 'John', age: 15, level: 'A' },
-    { name: 'Jane', age: 12, level: 'B' },
-    { name: 'Jack', age: 13, level: 'D' },
-    { name: 'Rob', age: 11, level: 'B' },
-    { name: 'Nick', age: 10, level: 'C' },
-    { name: 'Jess', age: 8, level: 'C' },
 ];
 
 const calendars = {
@@ -41,12 +40,15 @@ const calendars = {
     ],
 };
 
-const rta = users.map(user => user.attributes).flat();
-const rta2 = users.flatMap(user => user.attributes);
-const rta3 = Object.values(calendars).flat().map(calendar => calendar.startDate);
-console.log(rta);
-console.log(rta2);
-console.log(rta3);
+const example1 = users.map(user => user.attributes).flat();
+const example2 = users.flatMap(user => user.attributes);
+
+console.log(example1);
+console.log(example2);
+
+
+// const rta3 = Object.values(calendars).flat().map(calendar => calendar.startDate);
+// console.log(rta3);
 
 const myWords = ['hola mundo', 'hola mundo 2'];
 const rta4 = myWords.flatMap(word => word.split(' '));

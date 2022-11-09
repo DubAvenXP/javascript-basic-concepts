@@ -1,3 +1,6 @@
+// some returns true if any of the elements in the array
+// match the condition
+
 // const areIntervalOverlapping = require('date-fns/areIntervalsOverlapping');
 const numbers = [1, 2, 3, 4, 5];
 
@@ -34,28 +37,10 @@ const dates = [
     },
 ];
 
-// const isOverlap = (myDate, dateToCompare) => {
-//     return areIntervalOverlapping(
-//         { start: myDate.startDate, end: myDate.endDate },
-//         { start: dateToCompare.startDate, end: dateToCompare.endDate }
-//     );
-// }
-
-let someCondition = false;
-for (let i = 0; i < numbers.length; i++) {
-    const element = numbers[i];
-    if (element % 2 === 0) {
-        someCondition = true;
-        break;
-    }
-}
-
 const hasEvenNumber = numbers.some(number => number % 2 === 0);
 const hasDeliveredOrder = orders.some(order => order.delivered);
-// const hasOverlappingAppointment = dates.some(date => isOverlap(myNewAppointment, date));
 
 
 console.log(someCondition);
 console.log(hasEvenNumber);
 console.log(hasDeliveredOrder);
-// console.log(hasOverlappingAppointment);

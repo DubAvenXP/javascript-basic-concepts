@@ -1,8 +1,19 @@
+// Sort is used to sort the elements of an array
+// to change the original array, use sort
+
+
+
 const months = ["March", "Jan", "Feb", "Dec"];
 months.sort();
 console.log(months);
 
 const numbers = [1, 30, 4, 21, 100000];
+
+// sort numbers in ascending order
+// the first argument is the first item in the array
+// the second argument is the second item in the array
+// if the function returns a negative number, the first item will be before the second item
+
 numbers.sort( (a, b) => a - b );
 console.log(numbers);
 
