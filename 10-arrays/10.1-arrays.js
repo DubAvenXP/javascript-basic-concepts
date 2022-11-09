@@ -31,6 +31,14 @@
 // Important: arrays reserve the double of slots than the number of elements
 // This is done to improve performance when adding new elements to the array
 
+// position in memory 46546546587df84654165
+// const numbers = [ 1, 2 ]
+
+// position in memory 46546546587df84654165
+// const numbersInBackground = [ slot_1, slot_2, slot_3, slot_4 ]
+
+
+
 // If we exceed the reserved slots, the array will be copied to a new array
 // with double the size of the original array and the original array will be
 // garbage collected
@@ -56,6 +64,7 @@ console.log(array3);
 
 // 3.1 Using the Array.of method with a single parameter
 const array31 = Array.of(1);
+console.log(array31);
 
 
 // 4. Using the Array.from method

@@ -1,5 +1,6 @@
 
 const myObj = {}
+
 const person = {
     name: 'John',
     age: 30,
@@ -64,8 +65,8 @@ const myFrozenObj = Object.freeze({ name: 'John' });
 
 // Object.is
 // The Object.is() method determines whether two values are the same value.
-console.log(Object.is(1, 1));
-console.log(Object.is(1, '1')); 
+console.log(Object.is(1, 1)); // true
+console.log(Object.is(1, '1')); // false
 
 const obj1 = { name: 'John' };
 const obj2 = { name: 'John' };

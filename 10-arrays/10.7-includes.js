@@ -1,5 +1,9 @@
 const numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+
 const animals = [ 'dog', 'cat', 'bird', 'fish', 'lizard' ]
+
+
 const orders = [
     { id: 1, customerName: 'John', total: 230, delivered: true },
     { id: 2, customerName: 'Jane', total: 330, delivered: false },
@@ -21,6 +25,9 @@ for (let i = 0; i < animals.length; i++) {
 
 const rta2 = animals.includes('cat')
 
+
 console.log(rta);
 console.log(rta2);
+
+console.log(animals.includes('lion'))
 

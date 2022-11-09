@@ -1,7 +1,7 @@
 
 // object literal
 
-const natalia = {
+const myObj = {
     name: 'Natalia',
     age: 25,
     approvedCourses: [
@@ -13,6 +13,16 @@ const natalia = {
         this.cursosAprobados.push(course);
     }
 }
+
+
+console.log(  Object.prototype(myObj)  );
+
+
+
+
+
+
+
 
 // Hacer que Natalia apruebe otro curso
 natalia.aprobarCurso('NodeJS');

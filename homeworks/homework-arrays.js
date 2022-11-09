@@ -176,3 +176,16 @@ myArray.myCustomForEach((item, index, array) => {
 // 6. Create a custom method called myCustomSome that works like the some method
 
 // 7. Create a custom method called myCustomIncludes that works like the includes method
+
+
+
+// 8. Create a custom function called deepClone that clones an object with nested objects, arrays and functions
+
+// tips:
+
+// - you can use the typeof operator to check the type of a variable
+// - you can use the instanceof operator to check if an object is an instance of a class
+// - you can use the Object.keys method to get the keys of an object
+// - you can use the Array.isArray method to check if a variable is an array
+// - you can use the Array.prototype.forEach method to iterate over an array
+// - you can use recursion to solve this problem

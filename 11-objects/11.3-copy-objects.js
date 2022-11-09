@@ -14,6 +14,25 @@ const newPerson2 = {...person};
 newPerson2.name = 'Mary';
 
 // JSON
+
+
+const person1 = {
+    name: 'John',
+    lastName: 'Doe',
+    address: {
+        city: 'London',
+        country: 'UK',
+        otherObj: {
+            name: 'John',
+            lastName: 'Doe',
+        }
+    },
+    fullName() {
+        
+    }
+}
+
+
 const newPerson3 = JSON.parse(JSON.stringify(person));
 newPerson3.name = 'Peter';
 

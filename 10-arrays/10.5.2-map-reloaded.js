@@ -9,11 +9,17 @@ const orders = [
 
 const totalOrders = orders.map(item => item.total);
 
+console.log(totalOrders);
+
 const ordersWithTax = orders.map(item => {
     item.tax = 0.19;
     return item; // this is mutable, because we are changing the object
 }) 
 
+console.log(ordersWithTax);
+
 const ordersWithTax2 = orders.map(item => {
     return { ...item, tax: 0.19 }; // this is immutable, because we are creating a new object
 })
+
+console.log(ordersWithTax2);

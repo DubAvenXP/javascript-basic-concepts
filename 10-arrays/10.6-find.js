@@ -26,5 +26,8 @@ const rta4 = orders.findIndex((item) => item.id === 5)
 
 console.log(rta);
 console.log(rta2);
+
 console.log(rta3);
+
+
 console.log(rta4);

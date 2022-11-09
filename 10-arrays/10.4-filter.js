@@ -1,4 +1,5 @@
 const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction'];
+
 const products = [
     { name: 'apple', price: 1.25, isOnSale: true },
     { name: 'orange', price: 0.99, isOnSale: false },
@@ -19,12 +20,21 @@ for (let i = 0; i < words.length; i++) {
     }
 }
 
+
+
 const filteredWords = words.filter(word => word.length >= 6);
+
+console.log(filteredWords);
+
+
+const deleteAWordInArray = words.filter(word => word !== 'limit');
+console.log(deleteAWordInArray);
+
 
 const onSaleProducts = products.filter(product => product.isOnSale && product.price < 2);
 
-const search = (query) => {
-    return products.filter(
-        product => product.name.includes(query)
-    );
-}
+console.log(onSaleProducts);
+
+const search = products.filter(product => product.name.includes('berry'));
+
+console.log(search);

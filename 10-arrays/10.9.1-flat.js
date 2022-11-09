@@ -1,5 +1,9 @@
 const fruits = ['apple', 'banana', 'orange', ['pear', 'strawberry', 'kiwi']];
-const matrix = [[1, 2, 3], [4, 5, [1,2,3, [4,56]]], [7, 8, 9]];
+
+
+const matrix = [[1, 2, 3], [4, 5, [1,2,3, [4,56]]], [7, 8, 9]]; // [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+
 
 const rta = []
 for (let i = 0; i < matrix.length; i++) {
@@ -10,11 +14,14 @@ for (let i = 0; i < matrix.length; i++) {
     }
 }
 
-const rta2 = matrix.flat(3);
 const rta3 = fruits.flat();
 
-console.log(rta);
-console.log(rta2);
+// console.log(rta);
+
+const myExample1 = matrix.flat(3);
+console.log(myExample1);
+
+
 console.log(rta3);
 
 const myCustomFlat = (array) => {

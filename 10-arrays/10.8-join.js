@@ -19,6 +19,8 @@ console.log(rtaFinal);
 console.log(joined);
 
 
-const title = 'Curso de manipulacion de arrays';
+const title = 'arrays are awesome';
+
 const url = title.split(' ').join('-').toLowerCase();
+
 console.log(url);
